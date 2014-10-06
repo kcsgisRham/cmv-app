@@ -6,8 +6,8 @@ define([
 	'put-selector',
 	'dijit/Menu',
 	'dijit/layout/ContentPane',
-	'viewer/dijit/FloatingTitlePane',
-	'viewer/dijit/FloatingWidgetDialog'
+	'cmv/viewer/dijit/FloatingTitlePane',
+	'cmv/viewer/dijit/FloatingWidgetDialog'
 ], function(
 	declare,
 	array,
