@@ -95,14 +95,10 @@ define([
 			}
 
 			// handle widgets in self-contained folder
-			// if (widgetConfig.path.substring(widgetConfig.path.length - 1) === '/') {
-			// 	widgetConfig.path += 'main';
-			// }
-
-			// test if esri module, if it is, leave it alone, otherwise add module name to path
-			if (!widgetConfig.path.match(/^esri\//i)) {
+			// while maintaining backwards compatibility
+			if (widgetConfig.path.substring(widgetConfig.path.length - 1) === '/') {
 				var module = widgetConfig.path.split('/');
-				module.push(module[module.length - 1]);
+				module[module.length - 1] = module[module.length - 2];
 				widgetConfig.path = module.join('/');
 			}
 
