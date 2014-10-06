@@ -20,7 +20,7 @@ define([
 	'//cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.2/proj4.js',
 	'dijit/form/Button',
 	'xstyle/css!./css/StreetView.css',
-	'viewer/loaderPlugins/async!//maps.google.com/maps/api/js?v=3&sensor=false'
+	'cmv/viewer/loaderPlugins/async!//maps.google.com/maps/api/js?v=3&sensor=false'
 ], function(declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, lang, aspect, topic, GraphicsLayer, Graphic, SimpleRenderer, template, PictureMarkerSymbol, domStyle, Point, SpatialReference, MenuItem, proj4) {
 
 	return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
@@ -82,7 +82,7 @@ define([
 			}
 		},
 		createGraphicsLayer: function() {
-			this.pointSymbol = new PictureMarkerSymbol(require.toUrl('widgets/StreetView/images/blueArrow.png'), 30, 30);
+			this.pointSymbol = new PictureMarkerSymbol(require.toUrl('cmv/widgets/StreetView/images/blueArrow.png'), 30, 30);
 			this.pointGraphics = new GraphicsLayer({
 				id: 'streetview_graphics',
 				title: 'Street View'

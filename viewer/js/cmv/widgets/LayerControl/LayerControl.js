@@ -48,10 +48,10 @@ define([
         _swiper: null,
         _swipeLayerToggleHandle: null,
         _controls: {
-            dynamic: 'widgets/LayerControl/controls/Dynamic',
-            feature: 'widgets/LayerControl/controls/Feature',
-            image: 'widgets/LayerControl/controls/Image',
-            tiled: 'widgets/LayerControl/controls/Tiled'
+            dynamic: 'cmv/widgets/LayerControl/controls/Dynamic',
+            feature: 'cmv/widgets/LayerControl/controls/Feature',
+            image: 'cmv/widgets/LayerControl/controls/Image',
+            tiled: 'cmv/widgets/LayerControl/controls/Tiled'
         },
         constructor: function (options) {
             options = options || {};
