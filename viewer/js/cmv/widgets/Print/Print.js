@@ -43,8 +43,8 @@ define([
         defaultFormat: null,
         defaultLayout: null,
         baseClass: 'gis_PrintDijit',
-        pdfIcon: require.toUrl('gis/dijit/Print/images/pdf.png'),
-        imageIcon: require.toUrl('gis/dijit/Print/images/image.png'),
+        pdfIcon: require.toUrl('cmv/widgets/Print/images/pdf.png'),
+        imageIcon: require.toUrl('cmv/widgets/Print/images/image.png'),
         printTaskURL: null,
         printTask: null,
         postCreate: function () {
